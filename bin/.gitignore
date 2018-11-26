@@ -1,14 +1,6 @@
 /.classpath
 /.project
-/HUD/
-/Logo/
-/Maps/
-/Music/
-/SFX/
-/Sprites/
-/Tilesets/
-/application/
-/com/
-/mapbackground.png
 /grass.jpg
 /green.png
+/mapbackground.png
+/com/
