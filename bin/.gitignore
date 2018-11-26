@@ -1,3 +1,5 @@
+/.classpath
+/.project
 /HUD/
 /Logo/
 /Maps/
@@ -5,5 +7,8 @@
 /SFX/
 /Sprites/
 /Tilesets/
-/com/
 /application/
+/com/
+/mapbackground.png
+/grass.jpg
+/green.png
