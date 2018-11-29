@@ -20,7 +20,7 @@ public class Main extends Application {
 
 			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			Parent root = FXMLLoader.load(getClass().getResource("MapView.fxml"));
-			Scene scene = new Scene(root,700,550);
+			Scene scene = new Scene(root,801,533);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Diamond Hunter"); //
 
