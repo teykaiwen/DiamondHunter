@@ -27,22 +27,22 @@ public class Controller {
 
     @FXML
     void get_X_Axe(ActionEvent event) {
-    	
-    }
-
-    @FXML
-    void get_X_Boat(ActionEvent event) {
-
+    	String s = x_Axe.getText();
     }
 
     @FXML
     void get_Y_Axe(ActionEvent event) {
-
+    	String s = y_Axe.getText();
+    }
+    
+    @FXML
+    void get_X_Boat(ActionEvent event) {
+    	String s = x_Boat.getText();
     }
 
     @FXML
     void get_Y_Boat(ActionEvent event) {
-
+    	String s = y_Boat.getText();
     }
 
 }
