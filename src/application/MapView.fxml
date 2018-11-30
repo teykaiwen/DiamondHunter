@@ -5586,7 +5586,7 @@
       <TextField fx:id="y_Axe" layoutX="584.0" layoutY="194.0" onAction="#get_Y_Axe" prefHeight="30.0" prefWidth="153.0" />
       <TextField layoutX="584.0" layoutY="330.0" onAction="#get_X_Boat" prefHeight="30.0" prefWidth="153.0" fx:id="x_Boat" />
       <TextField fx:id="y_Boat" layoutX="584.0" layoutY="375.0" onAction="#get_Y_Boat" prefHeight="30.0" prefWidth="153.0" />
-	  <Button id="confirm" graphicTextGap="2.0" layoutX="661.0" layoutY="461.0" lineSpacing="5.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="98.0" stylesheets="@application.css" text="CONFIRM">
+	  <Button id="confirm" graphicTextGap="2.0" layoutX="661.0" layoutY="461.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="47.0" prefWidth="98.0" stylesheets="@application.css" text="CONFIRM">
          <font>
             <Font name="Baskerville Old Face" size="16.0" />
          </font>

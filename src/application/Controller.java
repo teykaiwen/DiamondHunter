@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import com.neet.DiamondHunter.Main.*;
 
 public class Controller {
 
@@ -45,4 +46,8 @@ public class Controller {
     	String s = y_Boat.getText();
     }
 
+    @FXML
+	void confirmButton () {
+		com.neet.DiamondHunter.Main.Game.main(null);
+	}
 }
