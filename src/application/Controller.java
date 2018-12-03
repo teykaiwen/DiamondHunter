@@ -23,6 +23,9 @@ public class Controller {
 	String y_axe;
 	String x_boat;
 	String y_boat;
+		
+	ImageView boat;
+	ImageView axe;
 	
 	@FXML
     private GridPane gridPane;
@@ -75,11 +78,19 @@ public class Controller {
     	a = ImageIO.read(f_axe);
     	Image image_boat = SwingFXUtils.toFXImage(b, null);
     	Image image_axe = SwingFXUtils.toFXImage(a, null);
+    	
+    	gridPane.getChildren().remove(boat);
+    	gridPane.getChildren().remove(axe);
+    	
        	Integer browIndex = Integer.valueOf(x_boat);
     	Integer bcolIndex = Integer.valueOf(y_boat);
     	Integer arowIndex = Integer.valueOf(x_axe);
     	Integer acolIndex = Integer.valueOf(y_axe);
-    	gridPane.add(new ImageView(image_boat), browIndex, bcolIndex);
-    	gridPane.add(new ImageView(image_axe), arowIndex, acolIndex);
+    	
+    	boat = new ImageView(image_boat);
+    	axe = new ImageView(image_axe);
+    	    	    	    	
+    	gridPane.add(boat, browIndex, bcolIndex);
+    	gridPane.add(axe, arowIndex, acolIndex);
    	}
 }
