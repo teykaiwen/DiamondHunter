@@ -5525,16 +5525,6 @@
                   <Image url="@../../Resources/deadTree.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="boat" fitHeight="13.0" fitWidth="13.0" layoutX="114.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3">
-               <image>
-                  <Image url="@../../Resources/boat.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="axe" fitHeight="13.0" fitWidth="13.0" layoutX="114.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
-               <image>
-                  <Image url="@../../Resources/axe.png" />
-               </image>
-            </ImageView>
          </children>
       </GridPane>
       <ImageView fitHeight="275.0" fitWidth="269.0" layoutX="533.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="533.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-5.0">
