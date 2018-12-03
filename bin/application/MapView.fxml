@@ -5579,7 +5579,7 @@
       <TextField fx:id="y_Axe" layoutX="724.0" layoutY="392.0" onAction="#get_Y_Axe" prefHeight="30.0" prefWidth="52.0" />
       <TextField layoutX="593.0" layoutY="345.0" onAction="#get_X_Boat" prefHeight="30.0" prefWidth="52.0" fx:id="x_Boat" />
       <TextField fx:id="y_Boat" layoutX="593.0" layoutY="390.0" onAction="#get_Y_Boat" prefHeight="30.0" prefWidth="52.0" />
-	  <Button id="confirm" graphicTextGap="2.0" layoutX="619.0" layoutY="459.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="50.0" prefWidth="100.0" stylesheets="@application.css" text="CONFIRM">
+	  <Button id="confirm" graphicTextGap="2.0" layoutX="619.0" layoutY="470.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@application.css" text="CONFIRM">
          <font>
             <Font name="Baskerville Old Face" size="16.0" />
          </font>

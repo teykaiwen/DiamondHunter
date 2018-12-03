@@ -16,12 +16,10 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 
 		try {
-			//BorderPane root = new BorderPane(); should be AnchorPane since my root is AnchorPane? but root is VBox
 
-			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			Parent root = FXMLLoader.load(getClass().getResource("MapView.fxml"));
-	
 			Scene scene = new Scene(root,801,533);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Diamond Hunter"); //
 
