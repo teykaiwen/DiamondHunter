@@ -71,7 +71,8 @@ public class Controller {
 
     @FXML
 	void confirmButton (ActionEvent event) throws IOException {
-		//com.neet.DiamondHunter.Main.Game.main(null);
+    	
+    	// read image of boat and axe
     	File f_boat = new File("@../../Resources/boat.png");
     	File f_axe = new File("@../../Resources/axe.png");
     	b = ImageIO.read(f_boat);
@@ -82,15 +83,19 @@ public class Controller {
     	gridPane.getChildren().remove(boat);
     	gridPane.getChildren().remove(axe);
     	
-       	Integer browIndex = Integer.valueOf(x_boat);
-    	Integer bcolIndex = Integer.valueOf(y_boat);
-    	Integer arowIndex = Integer.valueOf(x_axe);
-    	Integer acolIndex = Integer.valueOf(y_axe);
+    	// get latest update of boat and axe coordinates
+       	Integer browIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):4;
+    	Integer bcolIndex = ((y_boat)!= null)?Integer.valueOf(y_boat):12;
+    	Integer arowIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):37;
+    	Integer acolIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):26;
     	
     	boat = new ImageView(image_boat);
     	axe = new ImageView(image_axe);
-    	    	    	    	
+    	
+    	//update location of boat and axe
     	gridPane.add(boat, browIndex, bcolIndex);
     	gridPane.add(axe, arowIndex, acolIndex);
+    	
+    	//com.neet.DiamondHunter.Main.Game.main(null);
    	}
 }
