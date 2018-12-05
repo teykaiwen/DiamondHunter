@@ -86,8 +86,8 @@ public class Controller {
     	// get latest update of boat and axe coordinates
        	Integer browIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):4;
     	Integer bcolIndex = ((y_boat)!= null)?Integer.valueOf(y_boat):12;
-    	Integer arowIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):37;
-    	Integer acolIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):26;
+    	Integer arowIndex = ((x_axe)!= null)?Integer.valueOf(x_axe):37;
+    	Integer acolIndex = ((y_axe)!= null)?Integer.valueOf(y_axe):26;
     	
     	boat = new ImageView(image_boat);
     	axe = new ImageView(image_axe);
