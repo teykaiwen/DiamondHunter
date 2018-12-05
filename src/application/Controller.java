@@ -23,7 +23,12 @@ public class Controller {
 	String y_axe;
 	String x_boat;
 	String y_boat;
-		
+	
+	public static int browIndex;
+	public static int bcolIndex;
+	public static int arowIndex;
+	public static int acolIndex;
+					
 	ImageView boat;
 	ImageView axe;
 	
@@ -84,10 +89,10 @@ public class Controller {
     	gridPane.getChildren().remove(axe);
     	
     	// get latest update of boat and axe coordinates
-       	Integer browIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):4;
-    	Integer bcolIndex = ((y_boat)!= null)?Integer.valueOf(y_boat):12;
-    	Integer arowIndex = ((x_axe)!= null)?Integer.valueOf(x_axe):37;
-    	Integer acolIndex = ((y_axe)!= null)?Integer.valueOf(y_axe):26;
+       	browIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):4;
+       	bcolIndex = ((y_boat)!= null)?Integer.valueOf(y_boat):12;
+       	arowIndex = ((x_axe)!= null)?Integer.valueOf(x_axe):37;
+       	acolIndex = ((y_axe)!= null)?Integer.valueOf(y_axe):26;
     	
     	boat = new ImageView(image_boat);
     	axe = new ImageView(image_axe);
@@ -95,7 +100,7 @@ public class Controller {
     	//update location of boat and axe
     	gridPane.add(boat, browIndex, bcolIndex);
     	gridPane.add(axe, arowIndex, acolIndex);
-    	
+    	    	
     	//com.neet.DiamondHunter.Main.Game.main(null);
    	}
 }
