@@ -58,7 +58,7 @@ public class Controller {
     @FXML
     void get_X_Axe(ActionEvent event) {
     	x_axe = x_Axe.getText();
-    	//System.out.println(x_axe);
+    	System.out.println(x_axe);
     }
 
     @FXML
@@ -86,10 +86,13 @@ public class Controller {
     	gridPane.getChildren().remove(axe);
     	
     	// get latest update of boat and axe coordinates
-       	browIndex = ((x_boat)!= null)?Integer.valueOf(x_boat):4;
-       	bcolIndex = ((y_boat)!= null)?Integer.valueOf(y_boat):12;
-       	arowIndex = ((x_axe)!= null)?Integer.valueOf(x_axe):37;
-       	acolIndex = ((y_axe)!= null)?Integer.valueOf(y_axe):26;
+    	
+    	
+        browIndex = ((x_boat) == null || x_boat == "")?4:Integer.parseInt(x_boat);
+       	bcolIndex = ((y_boat) == null || y_boat == "")?12:Integer.parseInt(y_boat);
+       	arowIndex = ((x_axe) == null|| x_axe == "")?37:Integer.parseInt(x_axe);
+       	acolIndex = ((y_axe) == null|| y_axe == "")?26:Integer.parseInt(y_axe);
+    	         	
     	
     	boat = new ImageView(image_boat);
     	axe = new ImageView(image_axe);
