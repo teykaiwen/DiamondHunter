@@ -25,8 +25,7 @@ import application.Controller;
 
 public class PlayState extends GameState {
 	
-	private Controller controller;
-	
+	Controller controller = new Controller();
 	public int brow = controller.browIndex; 
 	public int bcol = controller.bcolIndex; 
 	public int arow = controller.arowIndex; 

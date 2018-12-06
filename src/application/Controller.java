@@ -98,6 +98,6 @@ public class Controller {
     	gridPane.add(boat, browIndex, bcolIndex);
     	gridPane.add(axe, arowIndex, acolIndex);
     	    	
-    	//com.neet.DiamondHunter.Main.Game.main(null);
+    	com.neet.DiamondHunter.Main.Game.main(null);
    	}
 }
