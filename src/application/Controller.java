@@ -28,6 +28,8 @@ public class Controller {
 	public static int bcolIndex;
 	public static int arowIndex;
 	public static int acolIndex;
+	public static BufferedImage Axe;
+	public static BufferedImage Boat;
 					
 	ImageView boat;
 	ImageView axe;
@@ -77,13 +79,8 @@ public class Controller {
     @FXML
 	void confirmButton (ActionEvent event) throws IOException {
     	
-    	// read image of boat and axe
-    	File f_boat = new File("@../../Resources/boat.png");
-    	File f_axe = new File("@../../Resources/axe.png");
-    	b = ImageIO.read(f_boat);
-    	a = ImageIO.read(f_axe);
-    	Image image_boat = SwingFXUtils.toFXImage(b, null);
-    	Image image_axe = SwingFXUtils.toFXImage(a, null);
+    	Image image_boat = SwingFXUtils.toFXImage(Boat, null);
+    	Image image_axe = SwingFXUtils.toFXImage(Axe, null);
     	
     	gridPane.getChildren().remove(boat);
     	gridPane.getChildren().remove(axe);
