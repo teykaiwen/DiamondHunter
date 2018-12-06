@@ -14,7 +14,6 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-
 import com.neet.DiamondHunter.Main.*;
 
 public class Controller {
@@ -58,7 +57,7 @@ public class Controller {
     @FXML
     void get_X_Axe(ActionEvent event) {
     	x_axe = x_Axe.getText();
-    	System.out.println(x_axe);
+
     }
 
     @FXML
@@ -101,6 +100,10 @@ public class Controller {
     	gridPane.add(boat, browIndex, bcolIndex);
     	gridPane.add(axe, arowIndex, acolIndex);
     	    	
-    	com.neet.DiamondHunter.Main.Game.main(null);
+
    	}
+    @FXML
+   	void playButton (ActionEvent event) throws IOException {
+    	com.neet.DiamondHunter.Main.Game.main(null);
+    }
 }
