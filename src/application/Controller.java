@@ -86,11 +86,15 @@ public class Controller {
     	
     	// get latest update of boat and axe coordinates
     	
+    	int ax = 37;
+    	int ay = 26;
+    	int bx = 4;
+    	int by = 12;
     	
-        browIndex = ((x_boat) == null || x_boat == "")?4:Integer.parseInt(x_boat);
-       	bcolIndex = ((y_boat) == null || y_boat == "")?12:Integer.parseInt(y_boat);
-       	arowIndex = ((x_axe) == null|| x_axe == "")?37:Integer.parseInt(x_axe);
-       	acolIndex = ((y_axe) == null|| y_axe == "")?26:Integer.parseInt(y_axe);
+        browIndex = ((x_boat) == null || x_boat == "")?bx:Integer.parseInt(x_boat);
+       	bcolIndex = ((y_boat) == null || y_boat == "")?by:Integer.parseInt(y_boat);
+       	arowIndex = ((x_axe) == null|| x_axe == "")?ax:Integer.parseInt(x_axe);
+       	acolIndex = ((y_axe) == null|| y_axe == "")?ay:Integer.parseInt(y_axe);
     	         	
     	
     	boat = new ImageView(image_boat);

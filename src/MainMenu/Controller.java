@@ -21,7 +21,7 @@ public class Controller {
 
     @FXML
     void runMapOnClick(ActionEvent event) {
-    	//Main.main(null);
+    	Main.main(null);
     }
 
 }

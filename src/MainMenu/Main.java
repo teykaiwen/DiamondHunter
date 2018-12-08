@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.Parent;
+import com.neet.DiamondHunter.GameState.PlayState;
 
 public class Main extends Application{
 	@Override
@@ -23,8 +24,7 @@ public class Main extends Application{
 			scene.getStylesheets().add(getClass().getResource("FrontPageButton.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Diamond Hunter");
-			primaryStage.setResizable(false);
-						
+			primaryStage.setResizable(false);					
 			primaryStage.show();
 
 		} catch(Exception e) {

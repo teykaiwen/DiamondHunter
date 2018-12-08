@@ -180,17 +180,34 @@ public class PlayState extends GameState {
 	
 	private void populateItems() {
 		
-		Item item;
+		if(acol != 0 && arow != 0 && brow != 0 && bcol != 0){
+			Item item;
+			
+			item = new Item(tileMap);
+			item.setType(Item.AXE);
+			item.setTilePosition(acol, arow);
+			items.add(item);
+			
+			item = new Item(tileMap);
+			item.setType(Item.BOAT);
+			item.setTilePosition(bcol, brow);
+			items.add(item);
+		}
+		else
+		{
+			Item item;
+			
+			item = new Item(tileMap);
+			item.setType(Item.AXE);
+			item.setTilePosition(26, 37);
+			items.add(item);
+			
+			item = new Item(tileMap);
+			item.setType(Item.BOAT);
+			item.setTilePosition(12, 4);
+			items.add(item);
+		}
 		
-		item = new Item(tileMap);
-		item.setType(Item.AXE);
-		item.setTilePosition(acol, arow);
-		items.add(item);
-		
-		item = new Item(tileMap);
-		item.setType(Item.BOAT);
-		item.setTilePosition(bcol, brow);
-		items.add(item);
 		
 	}
 	
