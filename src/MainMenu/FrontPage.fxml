@@ -5,8 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu.Controller">
    <children>
       <ImageView fitHeight="489.0" fitWidth="455.0" layoutX="-3.0" preserveRatio="true">
          <image>
@@ -23,8 +22,8 @@
             <Image url="@../../Resources/playersprites.png" />
          </image>
       </ImageView>
-      <Button layoutX="58.0" layoutY="279.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="RUN GAME" />
-      <Button layoutX="271.0" layoutY="279.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="MAP VIEWER" />
+      <Button fx:id="runGameButton" layoutX="58.0" layoutY="279.0" mnemonicParsing="false" onAction="#runGameOnClick" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="RUN GAME" />
+      <Button fx:id="mapViewerButton" layoutX="271.0" layoutY="279.0" mnemonicParsing="false" onAction="#runMapOnClick" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="MAP VIEWER" />
       <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="89.0" layoutY="56.0" preserveRatio="true">
          <image>
             <Image url="@../../Resources/flower.png" />
