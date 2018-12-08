@@ -80,99 +80,99 @@
                 <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="View" textAlignment="CENTER" textFill="$x2" wrapText="false" />
                         <ImageView fitHeight="428.0" fitWidth="481.0" layoutY="59.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/finalGreen.png" />
+                              <Image url="@../../Resources/finalGreen.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="195.0" fitWidth="428.0" layoutX="1.0" layoutY="138.0" preserveRatio="true">
                            <image>
-                              <Image url="@DH.png" />
+                              <Image url="@../../Resources/DH.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="29.0" layoutY="289.0" preserveRatio="true">
                            <image>
-                              <Image url="@playersprites.png" />
+                              <Image url="@../../Resources/playersprites.png" />
                            </image>
                         </ImageView>
                         <Button layoutX="86.0" layoutY="306.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="RUN GAME" />
                         <Button layoutX="224.0" layoutY="306.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="MAP VIEWER" />
                         <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="72.0" layoutY="117.0" preserveRatio="true">
                            <image>
-                              <Image url="@flower.png" />
+                              <Image url="@../../Resources/flower.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="42.0" fitWidth="38.0" layoutX="366.0" layoutY="138.0" preserveRatio="true">
                            <image>
-                              <Image url="@grass.png" />
+                              <Image url="@../../Resources/grass.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="282.0" layoutY="264.0" preserveRatio="true">
                            <image>
-                              <Image url="@grass.png" />
+                              <Image url="@../../Resources/grass.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="48.0" fitWidth="40.0" layoutX="281.0" layoutY="77.0" preserveRatio="true">
                            <image>
-                              <Image url="@flower.png" />
+                              <Image url="@../../Resources/flower.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="100.0" layoutY="257.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/axe.png" />
+                              <Image url="@../../Resources/axe.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="119.0" layoutY="367.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/deadTree.png" />
+                              <Image url="@../../Resources/deadTree.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="12.0" layoutY="432.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/tree2.png" />
+                              <Image url="@../../Resources/tree2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="63.0" layoutY="432.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/tree2.png" />
+                              <Image url="@../../Resources/tree2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="116.0" layoutY="432.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/tree2.png" />
+                              <Image url="@../../Resources/tree2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="370.0" layoutY="433.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/tree2.png" />
+                              <Image url="@../../Resources/tree2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="318.0" layoutY="432.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/tree2.png" />
+                              <Image url="@../../Resources/tree2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="266.0" layoutY="432.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/tree2.png" />
+                              <Image url="@../../Resources/tree2.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="10.0" layoutY="364.0" preserveRatio="true">
+                        <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="10.0" layoutY="365.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/tree2.png" />
+                              <Image url="@../../Resources/tree2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="370.0" layoutY="364.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/tree2.png" />
+                              <Image url="@../../Resources/tree2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="44.0" fitWidth="50.0" layoutX="290.0" layoutY="366.0" preserveRatio="true">
                            <image>
-                              <Image url="@diamond.png" />
+                              <Image url="@../../Resources/diamond.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="373.0" layoutY="269.0" preserveRatio="true">
                            <image>
-                              <Image url="@../Documents/NOTT/UG%20year%202/courses/sem1/COMP2042%20Software%20Maintenance/Coursework%202/DiamondHunter%20(git)/DiamondHunter/Resources/boat.png" />
+                              <Image url="@../../Resources/boat.png" />
                            </image>
                         </ImageView>
               </children>
