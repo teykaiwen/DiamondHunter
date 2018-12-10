@@ -1,12 +1,15 @@
 package application;
 
-		import javafx.application.Application;
-		import javafx.fxml.FXMLLoader;
-		import javafx.stage.Stage;
-		import javafx.scene.Scene;
-		import javafx.scene.layout.BorderPane;
+import java.awt.image.BufferedImage;
 
-		import javafx.scene.Parent;
+import javax.swing.ImageIcon;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.Parent;
 
 
 public class Main extends Application {
@@ -16,13 +19,20 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 
 		try {
-			//BorderPane root = new BorderPane(); should be AnchorPane since my root is AnchorPane? but root is VBox
 
-			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			Parent root = FXMLLoader.load(getClass().getResource("MapView.fxml"));
-			Scene scene = new Scene(root,700,550);
+			Scene scene = new Scene(root,801,533);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("Diamond Hunter"); //
+			primaryStage.setTitle("Diamond Hunter");
+			
+			ImageIcon icon = new ImageIcon("@../../Resources/Sprites/items.gif");
+			java.awt.Image image = icon.getImage();
+		    BufferedImage buffImg = new BufferedImage(image.getWidth(null), image.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+		    java.awt.Graphics items = buffImg.getGraphics();
+		    items.drawImage(image, 16, -16, null);
+		    Controller.Boat = buffImg.getSubimage(16, 0, 16, 16);
+		    Controller.Axe = buffImg.getSubimage(32, 0, 16, 16);
 
 			primaryStage.show();
 

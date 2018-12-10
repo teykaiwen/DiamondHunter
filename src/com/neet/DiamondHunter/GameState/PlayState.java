@@ -21,8 +21,16 @@ import com.neet.DiamondHunter.Manager.JukeBox;
 import com.neet.DiamondHunter.Manager.Keys;
 import com.neet.DiamondHunter.TileMap.TileMap;
 
+import application.Controller;
+
 public class PlayState extends GameState {
 	
+	Controller controller = new Controller();
+	public int brow = controller.browIndex; 
+	public int bcol = controller.bcolIndex; 
+	public int arow = controller.arowIndex; 
+	public int acol = controller.acolIndex; 
+		
 	// player
 	private Player player;
 	
@@ -172,17 +180,34 @@ public class PlayState extends GameState {
 	
 	private void populateItems() {
 		
-		Item item;
+		if(acol != 0 && arow != 0 && brow != 0 && bcol != 0){
+			Item item;
+			
+			item = new Item(tileMap);
+			item.setType(Item.AXE);
+			item.setTilePosition(acol, arow);
+			items.add(item);
+			
+			item = new Item(tileMap);
+			item.setType(Item.BOAT);
+			item.setTilePosition(bcol, brow);
+			items.add(item);
+		}
+		else
+		{
+			Item item;
+			
+			item = new Item(tileMap);
+			item.setType(Item.AXE);
+			item.setTilePosition(26, 37);
+			items.add(item);
+			
+			item = new Item(tileMap);
+			item.setType(Item.BOAT);
+			item.setTilePosition(12, 4);
+			items.add(item);
+		}
 		
-		item = new Item(tileMap);
-		item.setType(Item.AXE);
-		item.setTilePosition(26, 37);
-		items.add(item);
-		
-		item = new Item(tileMap);
-		item.setType(Item.BOAT);
-		item.setTilePosition(12, 4);
-		items.add(item);
 		
 	}
 	
