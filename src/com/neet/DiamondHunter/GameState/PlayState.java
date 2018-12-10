@@ -21,7 +21,7 @@ import com.neet.DiamondHunter.Manager.JukeBox;
 import com.neet.DiamondHunter.Manager.Keys;
 import com.neet.DiamondHunter.TileMap.TileMap;
 
-import application.Controller;
+import MapView.Controller;
 
 public class PlayState extends GameState {
 	

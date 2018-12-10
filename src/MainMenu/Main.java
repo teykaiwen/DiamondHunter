@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.ImageIcon;
 
-import application.Controller;
+import MapView.Controller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;

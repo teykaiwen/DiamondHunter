@@ -1,4 +1,4 @@
-package application;
+package MapView;
 
 import java.awt.image.BufferedImage;
 

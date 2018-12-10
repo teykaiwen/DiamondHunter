@@ -1,4 +1,4 @@
-package application;
+package MapView;
 
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
