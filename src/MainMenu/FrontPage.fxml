@@ -4,6 +4,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu.Controller">
    <children>
@@ -22,8 +23,14 @@
             <Image url="@../../Resources/playersprites.png" />
          </image>
       </ImageView>
-      <Button fx:id="runGameButton" layoutX="58.0" layoutY="279.0" mnemonicParsing="false" onAction="#runGameOnClick" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="RUN GAME" />
-      <Button fx:id="mapViewerButton" layoutX="271.0" layoutY="279.0" mnemonicParsing="false" onAction="#runMapOnClick" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="MAP VIEWER" />
+      <Button fx:id="runGameButton" layoutX="58.0" layoutY="279.0" mnemonicParsing="false" onAction="#runGameOnClick" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="RUN GAME">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="mapViewerButton" layoutX="271.0" layoutY="279.0" mnemonicParsing="false" onAction="#runMapOnClick" prefHeight="39.0" prefWidth="120.0" stylesheets="@FrontPageButton.css" text="MAP VIEWER" textFill="#0d0101">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="12.0" />
+         </font></Button>
       <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="89.0" layoutY="56.0" preserveRatio="true">
          <image>
             <Image url="@../../Resources/flower.png" />
