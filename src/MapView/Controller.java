@@ -3,18 +3,15 @@ package MapView;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.SnapshotParameters;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-
-
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import com.neet.DiamondHunter.Main.*;
 
 public class Controller {
 
@@ -32,8 +29,11 @@ public class Controller {
 					
 	ImageView boat;
 	ImageView axe;
+	TM tm;
 	
-	@FXML
+	GraphicsContext mapGraphics;
+	
+    @FXML
     private GridPane gridPane;
 	
     @FXML
@@ -53,8 +53,37 @@ public class Controller {
 
     @FXML
     private TextField y_Boat;
-
+    
     @FXML
+    private Canvas mapCanvas;
+    
+    public void initialize()
+    {
+    	tm = new TM(16);
+		initCanvas();
+    	try
+    	{
+    		tm = new TM(16);
+    		initCanvas();
+    	}
+    	catch (Exception e)
+    	{
+    		e.printStackTrace();
+    	}
+    }
+
+    void initCanvas() {
+    	mapCanvas.setWidth((double) TM.width);
+		mapCanvas.setHeight((double) TM.height);
+
+		tm.loadMap("/Maps/testmap.map");
+		mapGraphics = mapCanvas.getGraphicsContext2D();
+		tm.drawMap(mapGraphics);
+		mapCanvas.getGraphicsContext2D().drawImage(mapGraphics.getCanvas().snapshot(new SnapshotParameters(), null), 0, 0);
+		
+	}
+
+	@FXML
     void get_X_Axe(ActionEvent event) {
     	x_axe = x_Axe.getText();
 

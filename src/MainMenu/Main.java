@@ -1,17 +1,10 @@
 package MainMenu;
 
-import java.awt.image.BufferedImage;
-
-import javax.swing.ImageIcon;
-
-import MapView.Controller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.scene.Parent;
-import com.neet.DiamondHunter.GameState.PlayState;
 
 public class Main extends Application{
 	@Override
