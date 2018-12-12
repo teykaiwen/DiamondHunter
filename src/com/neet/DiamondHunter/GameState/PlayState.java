@@ -25,11 +25,10 @@ import MapView.Controller;
 
 public class PlayState extends GameState {
 	
-	Controller controller = new Controller();
-	public int brow = controller.browIndex; 
-	public int bcol = controller.bcolIndex; 
-	public int arow = controller.arowIndex; 
-	public int acol = controller.acolIndex; 
+	public int brow = Controller.browIndex; 
+	public int bcol = Controller.bcolIndex; 
+	public int arow = Controller.arowIndex; 
+	public int acol = Controller.acolIndex; 
 		
 	// player
 	private Player player;
