@@ -66,6 +66,13 @@ public class Controller {
     	{
     		tm = new TM(16);
     		initCanvas();
+    		
+    		Image image_boat = SwingFXUtils.toFXImage(Boat, null);
+        	Image image_axe = SwingFXUtils.toFXImage(Axe, null);	    	
+    		boat = new ImageView(image_boat);
+			axe = new ImageView(image_axe);
+    		gridPane.add(boat, 4, 12);
+        	gridPane.add(axe, 37, 26);
     	}
     	catch (Exception e)
     	{
@@ -117,6 +124,7 @@ public class Controller {
     	Image image_boat = SwingFXUtils.toFXImage(Boat, null);
     	Image image_axe = SwingFXUtils.toFXImage(Axe, null);
     	
+    	// removing existing axe and boat
     	gridPane.getChildren().remove(boat);
     	gridPane.getChildren().remove(axe);
     	    	    	
