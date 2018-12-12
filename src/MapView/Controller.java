@@ -57,6 +57,7 @@ public class Controller {
     @FXML
     private Canvas mapCanvas;
     
+    //Generating Map Viewer map in Map Viewer application window.
     public void initialize()
     {
     	tm = new TM(16);
@@ -71,7 +72,8 @@ public class Controller {
     		e.printStackTrace();
     	}
     }
-
+    
+    //Function plotting map in map viewer 
     void initCanvas() {
     	mapCanvas.setWidth((double) TM.width);
 		mapCanvas.setHeight((double) TM.height);
@@ -83,27 +85,32 @@ public class Controller {
 		
 	}
 
+    //Getting user input for axe x-coordinate
 	@FXML
     void get_X_Axe(ActionEvent event) {
     	x_axe = x_Axe.getText();
 
     }
 
+	//Getting user input for axe y-coordinate
     @FXML
     void get_Y_Axe(ActionEvent event) {
     	y_axe = y_Axe.getText();
     }
     
+  //Getting user input for boat x-coordinate
     @FXML
     void get_X_Boat(ActionEvent event) {
     	x_boat = x_Boat.getText();
     }
 
+  //Getting user input for boat y-coordinate
     @FXML
     void get_Y_Boat(ActionEvent event) {
     	y_boat = y_Boat.getText();
     }
 
+    //Button function which set axe and boat sprite on both Map Viewer and Diamond Hunter application window.
     @FXML
 	void confirmButton (ActionEvent event) throws IOException {
     	
@@ -112,29 +119,29 @@ public class Controller {
     	
     	gridPane.getChildren().remove(boat);
     	gridPane.getChildren().remove(axe);
-    	
-    	// get latest update of boat and axe coordinates
-    	
+    	    	    	
     	int ax = 37;
     	int ay = 26;
     	int bx = 4;
     	int by = 12;
     	
+    	//set boat and axe sprite location to user desirable location else to default when user doesn't input any coordinates
         browIndex = ((x_boat) == null || x_boat == "")?bx:Integer.parseInt(x_boat);
        	bcolIndex = ((y_boat) == null || y_boat == "")?by:Integer.parseInt(y_boat);
        	arowIndex = ((x_axe) == null|| x_axe == "")?ax:Integer.parseInt(x_axe);
        	acolIndex = ((y_axe) == null|| y_axe == "")?ay:Integer.parseInt(y_axe);
-    	         	
-    	
+    	         	    	
     	boat = new ImageView(image_boat);
     	axe = new ImageView(image_axe);
     	
-    	//update location of boat and axe
+    	//update location of boat and axe sprite
     	gridPane.add(boat, browIndex, bcolIndex);
     	gridPane.add(axe, arowIndex, acolIndex);
     	    	
 
    	}
+    
+    //Launch Diamond Hunter application window when Play button is clicked
     @FXML
    	void playButton (ActionEvent event) throws IOException {
     	com.neet.DiamondHunter.Main.Game.main(null);

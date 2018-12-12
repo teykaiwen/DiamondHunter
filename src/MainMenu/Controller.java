@@ -16,11 +16,13 @@ public class Controller {
     @FXML
     private Button mapViewerButton;    
     
+    //Launch Diamond Hunter game window when the run game button is clicked.
     @FXML
     void runGameOnClick(ActionEvent event) {
     	Game.main(null);
     }
         
+    //Launch Map Viewer application window when Map Viewer button is clicked.
     @FXML
     public void runMapOnClick(ActionEvent event) throws IOException {
     	try 

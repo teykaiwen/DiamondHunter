@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.scene.Parent;
 
 public class Main extends Application{
+	
+	//Open up main menu application window when launched.
 	@Override
 	public void start(Stage primaryStage) {
 

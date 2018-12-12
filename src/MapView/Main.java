@@ -19,6 +19,7 @@ public class Main extends Application {
 
 		try {
 
+			//Open up Map Viewer application window when launched.
 			Parent root = FXMLLoader.load(getClass().getResource("MapView.fxml"));
 			Scene scene = new Scene(root,909,640);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
@@ -26,6 +27,7 @@ public class Main extends Application {
 			primaryStage.sizeToScene();
 			primaryStage.setTitle("Diamond Hunter");
 			
+			//Extract boat and axe sprite from items.gif
 			ImageIcon icon = new ImageIcon("@../../Resources/Sprites/items.gif");
 			java.awt.Image image = icon.getImage();
 		    BufferedImage buffImg = new BufferedImage(image.getWidth(null), image.getHeight(null), BufferedImage.TYPE_INT_ARGB);

@@ -180,6 +180,7 @@ public class PlayState extends GameState {
 	
 	private void populateItems() {
 		
+		//Axe and boat sprite will be plotted according to user input
 		if(acol != 0 && arow != 0 && brow != 0 && bcol != 0){
 			Item item;
 			
@@ -193,7 +194,7 @@ public class PlayState extends GameState {
 			item.setTilePosition(bcol, brow);
 			items.add(item);
 		}
-		else
+		else//Axe and boat will be plotted in default coordinates when there's no user input
 		{
 			Item item;
 			
