@@ -25,7 +25,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.sizeToScene();
-			primaryStage.setTitle("Diamond Hunter");
+			primaryStage.setTitle("Diamond Hunter Map");
 			
 			//Extract boat and axe sprite from items.gif
 			ImageIcon icon = new ImageIcon("@../../Resources/Sprites/items.gif");

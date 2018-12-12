@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu.Controller">
    <children>
       <ImageView fitHeight="489.0" fitWidth="455.0" layoutX="-3.0" preserveRatio="true">
          <image>
@@ -63,42 +63,42 @@
       </ImageView>
       <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="16.0" layoutY="408.0" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/tree2.png" />
+            <Image url="@../../Resources/tree.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="66.0" layoutY="408.0" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/tree2.png" />
+            <Image url="@../../Resources/tree.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="118.0" layoutY="407.0" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/tree2.png" />
+            <Image url="@../../Resources/tree.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="393.0" layoutY="408.0" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/tree2.png" />
+            <Image url="@../../Resources/tree.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="343.0" layoutY="408.0" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/tree2.png" />
+            <Image url="@../../Resources/tree.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="288.0" layoutY="408.0" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/tree2.png" />
+            <Image url="@../../Resources/tree.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="16.0" layoutY="344.0" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/tree2.png" />
+            <Image url="@../../Resources/tree.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="389.0" layoutY="344.0" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/tree2.png" />
+            <Image url="@../../Resources/tree.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="44.0" fitWidth="50.0" layoutX="289.0" layoutY="355.0" preserveRatio="true">

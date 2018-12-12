@@ -27,6 +27,8 @@ public class Controller {
     public void runMapOnClick(ActionEvent event) throws IOException {
     	try 
     	{
+    		// This function is to solve the problem that we cannot run
+    		// multiple javafx application at once
     		Platform.runLater(new Runnable() {
 
 				@Override

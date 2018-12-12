@@ -19,6 +19,7 @@ public class TM {
 		this.tileSize = tileSize;
 	}
 	
+	// map loading function
 	public void loadMap(String s) {
 		
 		try {
@@ -28,6 +29,7 @@ public class TM {
 						new InputStreamReader(in)
 					);
 			
+			// getting the size of the map
 			numCols = Integer.parseInt(br.readLine());
 			numRows = Integer.parseInt(br.readLine());
 			map = new int[numRows][numCols];
@@ -49,13 +51,15 @@ public class TM {
 		
 	}
 	
-	
+	// extracting images to draw on map
 	public void drawMap(GraphicsContext g) {
 		Image tile = new Image("@../../MapView/testtileset.gif");
 		for(int row = 0; row < numRows; row++) {
 			for(int col = 0; col < numCols; col++) {
 				if(map[row][col] == 0) continue;
 				
+				// multiple conditions to determine which items to insert in
+				// the current location of the map
 				int rc = map[row][col];
 				if(rc == 20){
 					g.drawImage(tile, 0, 16, tileSize, tileSize, col*16, row*16, tileSize, tileSize);

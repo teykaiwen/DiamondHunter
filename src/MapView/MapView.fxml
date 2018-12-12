@@ -18,7 +18,7 @@
    <children>
       <ImageView fitHeight="652.0" fitWidth="269.0" layoutX="640.0" layoutY="-11.0" pickOnBounds="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-11.0">
          <image>
-            <Image url="@../../Resources/wood2.jpg" />
+            <Image url="@../../Resources/wood.jpg" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd8a847" height="169.0" layoutX="646.0" layoutY="276.0" stroke="#00000012" strokeType="INSIDE" width="124.0" />
@@ -62,7 +62,7 @@
       <TextField fx:id="y_Axe" layoutX="828.0" layoutY="392.0" onAction="#get_Y_Axe" prefHeight="30.0" prefWidth="52.0" />
       <TextField layoutX="697.0" layoutY="349.0" onAction="#get_X_Boat" prefHeight="30.0" prefWidth="52.0" fx:id="x_Boat" />
       <TextField fx:id="y_Boat" layoutX="697.0" layoutY="390.0" onAction="#get_Y_Boat" prefHeight="30.0" prefWidth="52.0" />
-	  <Button id="confirm" fx:id="confirm" graphicTextGap="2.0" layoutX="652.0" layoutY="522.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@application.css" text="SAVE" textFill="#680202">
+	  <Button id="confirm" fx:id="confirm" graphicTextGap="2.0" layoutX="660.0" layoutY="553.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@application.css" text="SAVE" textFill="#680202">
          <font>
             <Font name="Baskerville Old Face" size="16.0" />
          </font>
@@ -94,7 +94,7 @@
             <Font name="Perpetua Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Button id="play" fx:id="play" graphicTextGap="2.0" layoutX="791.0" layoutY="522.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#playButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@application.css" text="PLAY" textFill="#680202">
+      <Button id="play" fx:id="play" graphicTextGap="2.0" layoutX="791.0" layoutY="553.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#playButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@application.css" text="PLAY" textFill="#680202">
          <font>
             <Font name="Baskerville Old Face" size="16.0" />
          </font>
@@ -185,6 +185,16 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
-      </GridPane>  
+      </GridPane>
+      <ImageView fitHeight="57.0" fitWidth="249.0" layoutX="650.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Resources/signboard.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="673.0" layoutY="461.0" prefHeight="65.0" prefWidth="207.0" text="Please press the Save buton before playing the game" textFill="#720202" wrapText="true">
+         <font>
+            <Font name="Perpetua Bold Italic" size="18.0" />
+         </font>
+      </Label>  
    </children>
 </AnchorPane>

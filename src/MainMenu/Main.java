@@ -13,7 +13,8 @@ public class Main extends Application{
 	public void start(Stage primaryStage) {
 
 		try {
-
+			
+			// initializing scene and stage for main menu
 			Parent root = FXMLLoader.load(getClass().getResource("FrontPage.fxml"));
 			Scene scene = new Scene(root,440,443);
 			scene.getStylesheets().add(getClass().getResource("FrontPageButton.css").toExternalForm());
@@ -28,6 +29,7 @@ public class Main extends Application{
 	}
 
 	public static void main(String[] args) {
+		//launching main menu
 		launch(args);
 	}
 }
