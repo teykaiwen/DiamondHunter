@@ -30,7 +30,7 @@ public class Main extends Application {
 		    //Open up Map Viewer application window when launched.
 			Parent root = FXMLLoader.load(getClass().getResource("MapView.fxml"));
 			Scene scene = new Scene(root,909,640);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("MapView.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.sizeToScene();
 			primaryStage.setTitle("Diamond Hunter Map");
