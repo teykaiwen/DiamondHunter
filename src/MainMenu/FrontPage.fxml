@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu.Controller">
    <children>
       <ImageView fitHeight="489.0" fitWidth="455.0" layoutX="-3.0" preserveRatio="true">
          <image>
             <Image url="@../../Resources/finalGreen.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="195.0" fitWidth="428.0" layoutX="11.0" layoutY="63.0" preserveRatio="true">
+      <ImageView id="welcomeText" fx:id="welcomeText" fitHeight="195.0" fitWidth="428.0" layoutX="11.0" layoutY="63.0" preserveRatio="true">
          <image>
             <Image url="@../../Resources/DH.png" />
          </image>
