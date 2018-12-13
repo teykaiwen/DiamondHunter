@@ -74,14 +74,14 @@ public class Controller implements Initializable {
 		
 		// Transition of runGameButton
 		TranslateTransition playButton = new TranslateTransition();
-		playButton.setDuration(Duration.millis(500));
+		playButton.setDuration(Duration.millis(800));
 		playButton.setNode(runGameButton);
 		playButton.setFromX(-300);
 		playButton.setToX(0);
 		
 		// Transition of mapViewerButton
 		TranslateTransition mapButton = new TranslateTransition();
-		mapButton.setDuration(Duration.millis(500));
+		mapButton.setDuration(Duration.millis(800));
 		mapButton.setNode(mapViewerButton);
 		mapButton.setFromX(300);
 		mapButton.setToX(0);
