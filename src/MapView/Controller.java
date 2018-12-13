@@ -9,6 +9,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -65,7 +66,7 @@ public class Controller {
     	try
     	{
     		tm = new TM(16);
-    		initCanvas();
+    		initCanvas();   		
     		
     		Image image_boat = SwingFXUtils.toFXImage(Boat, null);
         	Image image_axe = SwingFXUtils.toFXImage(Axe, null);	    	
@@ -94,27 +95,36 @@ public class Controller {
 
     //Getting user input for axe x-coordinate
 	@FXML
-    void get_X_Axe(ActionEvent event) {
-    	x_axe = x_Axe.getText();
+    void get_X_Axe(KeyEvent event) {
+		x_Axe.textProperty().addListener((observable, oldValue, newValue) -> {
+    		x_axe = x_Axe.getText(); 
+    	});
 
     }
 
 	//Getting user input for axe y-coordinate
     @FXML
-    void get_Y_Axe(ActionEvent event) {
-    	y_axe = y_Axe.getText();
+    void get_Y_Axe(KeyEvent event) {
+    	y_Axe.textProperty().addListener((observable, oldValue, newValue) -> {
+    		y_axe = y_Axe.getText(); 
+    	});
     }
     
   //Getting user input for boat x-coordinate
     @FXML
-    void get_X_Boat(ActionEvent event) {
-    	x_boat = x_Boat.getText();
+    void get_X_Boat(KeyEvent event) {
+    	x_Boat.textProperty().addListener((observable, oldValue, newValue) -> {
+    		x_boat = x_Boat.getText(); 
+    	});
+    	  	
     }
 
   //Getting user input for boat y-coordinate
     @FXML
-    void get_Y_Boat(ActionEvent event) {
-    	y_boat = y_Boat.getText();
+    void get_Y_Boat(KeyEvent event) {
+    	y_Boat.textProperty().addListener((observable, oldValue, newValue) -> {
+    		y_boat = y_Boat.getText(); 
+    	});
     }
 
     //Button function which set axe and boat sprite on both Map Viewer and Diamond Hunter application window.
@@ -141,12 +151,10 @@ public class Controller {
     	         	    	
     	boat = new ImageView(image_boat);
     	axe = new ImageView(image_axe);
-    	
+    	   	
     	//update location of boat and axe sprite
     	gridPane.add(boat, browIndex, bcolIndex);
-    	gridPane.add(axe, arowIndex, acolIndex);
-    	    	
-
+    	gridPane.add(axe, arowIndex, acolIndex); 	    
    	}
     
     //Launch Diamond Hunter application window when Play button is clicked

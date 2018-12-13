@@ -11,7 +11,7 @@ public class Main extends Application{
 	//Open up main menu application window when launched.
 	@Override
 	public void start(Stage primaryStage) {
-
+		
 		try {
 			
 			// initializing scene and stage for main menu
