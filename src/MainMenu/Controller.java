@@ -45,7 +45,7 @@ public class Controller implements Initializable {
 
 				@Override
 				public void run() {
-					new MapViewer.Main().start(new Stage());
+					new MapViewer.MapVIewerMain().start(new Stage());
 					
 				}
     			

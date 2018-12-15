@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.Parent;
 
 
-public class Main extends Application {
+public class MapVIewerMain extends Application {
 
 
 	@Override
