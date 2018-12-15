@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.Parent;
 
 
-public class MapVIewerMain extends Application {
+public class MapViewerMain extends Application {
 
 
 	@Override
@@ -21,7 +21,7 @@ public class MapVIewerMain extends Application {
 			//Extract boat and axe sprite from items.gif
 			ImageIcon icon = new ImageIcon("@../../Resources/Sprites/items.gif");
 			java.awt.Image image = icon.getImage();
-		    BufferedImage buffImg = new BufferedImage(image.getWidth(null), image.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+		    BufferedImage buffImg = new BufferedImage(48, 16, BufferedImage.TYPE_INT_ARGB);
 		    java.awt.Graphics items = buffImg.getGraphics();
 		    items.drawImage(image, 16, -16, null);
 		    Controller.Boat = buffImg.getSubimage(16, 0, 16, 16);
