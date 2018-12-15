@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MapView.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MapView.Controller">
    <children>
       <ImageView fitHeight="652.0" fitWidth="269.0" layoutX="640.0" layoutY="-11.0" pickOnBounds="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-11.0">
          <image>
@@ -62,7 +62,7 @@
       <TextField fx:id="y_Axe" layoutX="827.0" layoutY="484.0" onKeyTyped="#get_Y_Axe" prefHeight="30.0" prefWidth="52.0" promptText="26" />
       <TextField layoutX="696.0" layoutY="441.0" onKeyTyped="#get_X_Boat" prefHeight="30.0" prefWidth="52.0" promptText="4" fx:id="x_Boat" />
       <TextField fx:id="y_Boat" layoutX="696.0" layoutY="482.0" onKeyTyped="#get_Y_Boat" prefHeight="30.0" prefWidth="52.0" promptText="12" />
-	  <Button id="confirm" fx:id="confirm" graphicTextGap="2.0" layoutX="660.0" layoutY="569.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@application.css" text="SAVE" textFill="#680202">
+	  <Button id="confirm" fx:id="confirm" graphicTextGap="2.0" layoutX="660.0" layoutY="569.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@MapView.css" text="SAVE" textFill="#680202">
          <font>
             <Font name="Baskerville Old Face" size="16.0" />
          </font>
@@ -94,7 +94,7 @@
             <Font name="Perpetua Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Button id="play" fx:id="play" graphicTextGap="2.0" layoutX="791.0" layoutY="570.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#playButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@application.css" text="PLAY" textFill="#680202">
+      <Button id="play" fx:id="play" graphicTextGap="2.0" layoutX="791.0" layoutY="570.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#playButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@MapView.css" text="PLAY" textFill="#680202">
          <font>
             <Font name="Baskerville Old Face" size="16.0" />
          </font>
