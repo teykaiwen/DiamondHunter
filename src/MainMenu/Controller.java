@@ -40,13 +40,12 @@ public class Controller implements Initializable {
     public void runMapOnClick(ActionEvent event) throws IOException {
     	try 
     	{
-    		// This function is to solve the problem that we cannot run
-    		// multiple javafx application at once
+    		// run multiple javafx application at once
     		Platform.runLater(new Runnable() {
 
 				@Override
 				public void run() {
-					new MapView.Main().start(new Stage());
+					new MapViewer.Main().start(new Stage());
 					
 				}
     			

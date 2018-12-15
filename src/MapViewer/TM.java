@@ -1,4 +1,4 @@
-package MapView;
+package MapViewer;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -53,7 +53,7 @@ public class TM {
 	
 	// extracting images to draw on map
 	public void drawMap(GraphicsContext g) {
-		Image tile = new Image("@../../MapView/testtileset.gif");
+		Image tile = new Image("@../../MapViewer/testtileset.gif");
 		for(int row = 0; row < numRows; row++) {
 			for(int col = 0; col < numCols; col++) {
 				if(map[row][col] == 0) continue;

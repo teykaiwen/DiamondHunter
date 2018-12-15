@@ -1,4 +1,4 @@
-package MapView;
+package MapViewer;
 
 import java.awt.image.BufferedImage;
 
@@ -28,9 +28,9 @@ public class Main extends Application {
 		    Controller.Axe = buffImg.getSubimage(32, 0, 16, 16);
 		    
 		    //Open up Map Viewer application window when launched.
-			Parent root = FXMLLoader.load(getClass().getResource("MapView.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("MapViewer.fxml"));
 			Scene scene = new Scene(root,909,640);
-			scene.getStylesheets().add(getClass().getResource("MapView.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("MapViewer.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.sizeToScene();
 			primaryStage.setTitle("Diamond Hunter Map");
