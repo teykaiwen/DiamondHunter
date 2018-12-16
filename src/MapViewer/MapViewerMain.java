@@ -1,14 +1,17 @@
 package MapViewer;
 
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
 
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
+import com.neet.DiamondHunter.Manager.Content;
 
 
 public class MapViewerMain extends Application {
@@ -19,13 +22,10 @@ public class MapViewerMain extends Application {
 
 		try {		
 			//Extract boat and axe sprite from items.gif
-			ImageIcon icon = new ImageIcon("@../../Resources/Sprites/items.gif");
-			java.awt.Image image = icon.getImage();
-		    BufferedImage buffImg = new BufferedImage(48, 16, BufferedImage.TYPE_INT_ARGB);
-		    java.awt.Graphics items = buffImg.getGraphics();
-		    items.drawImage(image, 16, -16, null);
-		    Controller.Boat = buffImg.getSubimage(16, 0, 16, 16);
-		    Controller.Axe = buffImg.getSubimage(32, 0, 16, 16);
+		    BufferedImage buffImg = ImageIO.read(getClass().getResourceAsStream("/Sprites/items.gif"));
+		    Controller.Boat = buffImg.getSubimage(0, 16, 16, 16);
+		    Controller.Axe = buffImg.getSubimage(16, 16, 16, 16);
+		    
 		    
 		    //Open up Map Viewer application window when launched.
 			Parent root = FXMLLoader.load(getClass().getResource("MapViewer.fxml"));

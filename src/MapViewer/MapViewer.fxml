@@ -18,14 +18,14 @@
    <children>
       <ImageView fitHeight="652.0" fitWidth="269.0" layoutX="640.0" layoutY="-11.0" pickOnBounds="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-11.0">
          <image>
-            <Image url="@../../Resources/MapViewerGraphics/wood.jpg" />
+            <Image url="/MapViewerGraphics/wood.jpg" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd8a847" height="169.0" layoutX="645.0" layoutY="368.0" stroke="#00000012" strokeType="INSIDE" width="124.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd8a847" height="169.0" layoutX="778.0" layoutY="368.0" stroke="#00000012" strokeType="INSIDE" width="124.0" />
       <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="832.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/MainMenuGraphics/axe.png" />
+            <Image url="/MainMenuGraphics/axe.png" />
          </image>
       </ImageView>
       <Label layoutX="656.0" layoutY="24.0" prefHeight="47.0" prefWidth="185.0" text="Set Item's" textFill="WHITE">
@@ -45,7 +45,7 @@
       </Label>
       <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="689.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/MainMenuGraphics/boat.png" />
+            <Image url="MainMenuGraphics/boat.png" />
          </image>
       </ImageView>
       <Label layoutX="653.0" layoutY="437.0" prefHeight="39.0" prefWidth="39.0" text="X:" textFill="WHITE">
@@ -75,12 +75,12 @@
       </Label>
       <ImageView fitHeight="64.0" fitWidth="249.0" layoutX="652.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/MapViewerGraphics/signboard.PNG" />
+            <Image url="/MapViewerGraphics/signboard.PNG" />
          </image>
       </ImageView>
       <ImageView fitHeight="57.0" fitWidth="249.0" layoutX="652.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../Resources/MapViewerGraphics/signboard.PNG" />
+            <Image url="/MapViewerGraphics/signboard.PNG" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2b2645c" height="116.0" layoutX="649.0" layoutY="199.0" stroke="#00000012" strokeType="INSIDE" width="248.0" />

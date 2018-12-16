@@ -39,7 +39,9 @@ public class GameOverState extends GameState {
 		else rank = 4;
 	}
 	
-	public void update() {}
+	public void update() {
+		handleInput();
+	}
 	
 	public void draw(Graphics2D g) {
 		
@@ -70,7 +72,7 @@ public class GameOverState extends GameState {
 	}
 	
 	public void handleInput() {
-		if(Keys.isPressed(Keys.ENTER)) {
+		if(Keys.anyKeyPress()) {
 			gsm.setState(GameStateManager.MENU);
 			JukeBox.play("collect");
 		}
