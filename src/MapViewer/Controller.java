@@ -183,7 +183,7 @@ public class Controller {
     	Alert al = new Alert(Alert.AlertType.INFORMATION);
     	al.setTitle("Warning");
     	al.setHeaderText("Warning: Invalid item position.");
-    	al.setContentText("The item position is out of scope. Please readjust the item position for a complete game experience.");
+    	al.setContentText("The item position is out of scope. Please readjust the item position for a better game experience.");
     	al.showAndWait();
     }
     
@@ -199,16 +199,16 @@ public class Controller {
    	
     	if(flag_position==1) {
     		if(flag_item==1) {
-    			al.setContentText("The boat is in the river. Please readjust the item position for a better game experience..");
+    			al.setContentText("The boat is in the river. Please readjust the item position for a better game experience.");
     		}else {
-    			al.setContentText("The axe is in the river. Please readjust the item position for a better game experience..");
+    			al.setContentText("The axe is in the river. Please readjust the item position for a better game experience.");
     		}  		
-    	}else
-    	{
+    	}
+    	else{
     		if(flag_item==1) {
-    			al.setContentText("The boat is on a tree. Please readjust the item position for a better game experience..");
+    			al.setContentText("The boat is on a tree. Please readjust the item position for a better game experience.");
     		}else {
-    			al.setContentText("The axe is on a tree. Please readjust the item position for a better game experience..");
+    			al.setContentText("The axe is on a tree. Please readjust the item position for a better game experience.");
     		}
     	}
     	
