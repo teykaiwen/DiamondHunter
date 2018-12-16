@@ -1,17 +1,13 @@
 package MapViewer;
 
-import java.awt.Graphics;
-import java.awt.image.BufferedImage;
-import java.io.FileInputStream;
 
+import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
-import com.neet.DiamondHunter.Manager.Content;
 
 
 public class MapViewerMain extends Application {

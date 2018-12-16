@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -149,6 +150,25 @@ public class Controller {
        	arowIndex = ((x_axe) == null|| x_axe == "")?ax:Integer.parseInt(x_axe);
        	acolIndex = ((y_axe) == null|| y_axe == "")?ay:Integer.parseInt(y_axe);
     	         	    	
+       	// error handling to alert user of invalid item position
+       	if(browIndex>39||bcolIndex>39||arowIndex>39||acolIndex>39) {
+       		alert(event);
+       	}else {
+       		if(tm.map[bcolIndex][browIndex] == 20|| tm.map[bcolIndex][browIndex] == 21) {
+           		alert(event,0,1);
+           	}
+           	if(tm.map[acolIndex][arowIndex] == 20||tm.map[acolIndex][arowIndex] == 21) {
+           		alert(event,0,0);
+           	}
+           	if(tm.map[bcolIndex][browIndex] == 22) {
+           		alert(event,1,1);
+           	}
+           	if(tm.map[acolIndex][arowIndex] == 22) {
+           		alert(event,1,0);
+           	}
+       	}
+       	
+       	
     	boat = new ImageView(image_boat);
     	axe = new ImageView(image_axe);
     	   	
@@ -156,6 +176,44 @@ public class Controller {
     	gridPane.add(boat, browIndex, bcolIndex);
     	gridPane.add(axe, arowIndex, acolIndex); 	    
    	}
+    
+    // function to pop out alert box
+    
+    void alert (ActionEvent event) {
+    	Alert al = new Alert(Alert.AlertType.INFORMATION);
+    	al.setTitle("Warning");
+    	al.setHeaderText("Warning: Invalid item position.");
+    	al.setContentText("The item position is out of scope. Please readjust the item position for a complete game experience.");
+    	al.showAndWait();
+    }
+    
+    // function with flags to pop out specific alert box
+    void alert (ActionEvent event, int flag_position, int flag_item) {
+    	
+    	Alert al = new Alert(Alert.AlertType.INFORMATION);
+    	al.setTitle("Warning");
+    	al.setHeaderText("Warning: Invalid item position.");
+    	
+    	// when flag_item is 1, the item is boat
+    	// when flag_position is 1 ,the item is place in the river.
+   	
+    	if(flag_position==1) {
+    		if(flag_item==1) {
+    			al.setContentText("The boat is in the river. Please readjust the item position for a better game experience..");
+    		}else {
+    			al.setContentText("The axe is in the river. Please readjust the item position for a better game experience..");
+    		}  		
+    	}else
+    	{
+    		if(flag_item==1) {
+    			al.setContentText("The boat is on a tree. Please readjust the item position for a better game experience..");
+    		}else {
+    			al.setContentText("The axe is on a tree. Please readjust the item position for a better game experience..");
+    		}
+    	}
+    	
+    	al.showAndWait();
+    }
     
     //Launch Diamond Hunter application window when Play button is clicked
     @FXML
