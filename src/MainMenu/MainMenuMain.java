@@ -19,7 +19,7 @@ public class MainMenuMain extends Application{
 			Scene scene = new Scene(root,440,443);
 			scene.getStylesheets().add(getClass().getResource("FrontPageButton.css").toExternalForm());
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("Diamond Hunter");
+			primaryStage.setTitle("Main Menu");
 			primaryStage.setResizable(false);					
 			primaryStage.show();
 
