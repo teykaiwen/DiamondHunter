@@ -1,29 +1,25 @@
 package MainMenu;
 
-import java.awt.image.BufferedImage;
-
-import javax.swing.ImageIcon;
-
-import application.Controller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.scene.Parent;
-import com.neet.DiamondHunter.GameState.PlayState;
 
-public class Main extends Application{
+public class MainMenuMain extends Application{
+	
+	//Open up main menu application window when launched.
 	@Override
 	public void start(Stage primaryStage) {
-
+		
 		try {
-
+			
+			// initializing scene and stage for main menu
 			Parent root = FXMLLoader.load(getClass().getResource("FrontPage.fxml"));
 			Scene scene = new Scene(root,440,443);
 			scene.getStylesheets().add(getClass().getResource("FrontPageButton.css").toExternalForm());
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("Diamond Hunter");
+			primaryStage.setTitle("Main Menu");
 			primaryStage.setResizable(false);					
 			primaryStage.show();
 
@@ -33,6 +29,7 @@ public class Main extends Application{
 	}
 
 	public static void main(String[] args) {
+		//launching main menu
 		launch(args);
 	}
 }

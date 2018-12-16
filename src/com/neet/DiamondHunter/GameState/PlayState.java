@@ -21,15 +21,14 @@ import com.neet.DiamondHunter.Manager.JukeBox;
 import com.neet.DiamondHunter.Manager.Keys;
 import com.neet.DiamondHunter.TileMap.TileMap;
 
-import application.Controller;
+import MapViewer.Controller;
 
 public class PlayState extends GameState {
 	
-	Controller controller = new Controller();
-	public int brow = controller.browIndex; 
-	public int bcol = controller.bcolIndex; 
-	public int arow = controller.arowIndex; 
-	public int acol = controller.acolIndex; 
+	public int brow = Controller.browIndex; 
+	public int bcol = Controller.bcolIndex; 
+	public int arow = Controller.arowIndex; 
+	public int acol = Controller.acolIndex; 
 		
 	// player
 	private Player player;
@@ -180,6 +179,7 @@ public class PlayState extends GameState {
 	
 	private void populateItems() {
 		
+		//Axe and boat sprite will be plotted according to user input
 		if(acol != 0 && arow != 0 && brow != 0 && bcol != 0){
 			Item item;
 			
@@ -193,7 +193,7 @@ public class PlayState extends GameState {
 			item.setTilePosition(bcol, brow);
 			items.add(item);
 		}
-		else
+		else//Axe and boat will be plotted in default coordinates when there's no user input
 		{
 			Item item;
 			

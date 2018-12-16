@@ -1,9 +1,0 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
-
-.button{
-	 
-    -fx-border-radius: 2;
-    -fx-background-color: #DFB951;
-    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
-
-}

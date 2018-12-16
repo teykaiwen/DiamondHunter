@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MapViewer.Controller">
+   <children>
+      <ImageView fitHeight="652.0" fitWidth="269.0" layoutX="640.0" layoutY="-11.0" pickOnBounds="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-11.0">
+         <image>
+            <Image url="/MapViewerGraphics/wood.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd8a847" height="169.0" layoutX="645.0" layoutY="368.0" stroke="#00000012" strokeType="INSIDE" width="124.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd8a847" height="169.0" layoutX="778.0" layoutY="368.0" stroke="#00000012" strokeType="INSIDE" width="124.0" />
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="832.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/MainMenuGraphics/axe.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="656.0" layoutY="24.0" prefHeight="47.0" prefWidth="185.0" text="Set Item's" textFill="WHITE">
+         <font>
+            <Font name="Blackadder ITC" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="785.0" layoutY="440.0" prefHeight="39.0" prefWidth="39.0" text="X:" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="786.0" layoutY="477.0" prefHeight="39.0" prefWidth="39.0" text="Y:" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="689.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="MainMenuGraphics/boat.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="653.0" layoutY="437.0" prefHeight="39.0" prefWidth="39.0" text="X:" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="654.0" layoutY="477.0" prefHeight="39.0" prefWidth="39.0" text="Y:" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="28.0" />
+         </font>
+      </Label>
+      <TextField layoutX="827.0" layoutY="443.0" onKeyTyped="#get_X_Axe" prefHeight="30.0" prefWidth="52.0" promptText="37" fx:id="x_Axe" />
+      <TextField fx:id="y_Axe" layoutX="827.0" layoutY="484.0" onKeyTyped="#get_Y_Axe" prefHeight="30.0" prefWidth="52.0" promptText="26" />
+      <TextField layoutX="696.0" layoutY="441.0" onKeyTyped="#get_X_Boat" prefHeight="30.0" prefWidth="52.0" promptText="4" fx:id="x_Boat" />
+      <TextField fx:id="y_Boat" layoutX="696.0" layoutY="482.0" onKeyTyped="#get_Y_Boat" prefHeight="30.0" prefWidth="52.0" promptText="12" />
+	  <Button id="confirm" fx:id="confirm" graphicTextGap="2.0" layoutX="660.0" layoutY="569.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@MapViewer.css" text="SAVE" textFill="#680202">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Button>
+      <Accordion />
+      <Label layoutX="696.0" layoutY="82.0" prefHeight="72.0" prefWidth="207.0" text="Coordinates..." textFill="WHITE">
+         <font>
+            <Font name="Blackadder ITC" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="249.0" layoutX="652.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/MapViewerGraphics/signboard.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="249.0" layoutX="652.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/MapViewerGraphics/signboard.PNG" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2b2645c" height="116.0" layoutX="649.0" layoutY="199.0" stroke="#00000012" strokeType="INSIDE" width="248.0" />
+      <Label layoutX="668.0" layoutY="256.0" prefHeight="57.0" prefWidth="221.0" text="Please press the Save button before playing the game" textFill="#720202" wrapText="true">
+         <font>
+            <Font name="Perpetua Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="675.0" layoutY="193.0" prefHeight="65.0" prefWidth="214.0" text="Range of value to input:          X : 2- 37 , Y : 2-37" textFill="#720202" wrapText="true">
+         <font>
+            <Font name="Perpetua Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button id="play" fx:id="play" graphicTextGap="2.0" layoutX="791.0" layoutY="570.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#playButton" prefHeight="39.0" prefWidth="100.0" stylesheets="@MapViewer.css" text="PLAY" textFill="#680202">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Button>
+      <Canvas fx:id="mapCanvas" height="640.0" width="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <GridPane fx:id="gridPane" layoutY="-1.0" prefHeight="640.0" prefWidth="640.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>  
+   </children>
+</AnchorPane>
